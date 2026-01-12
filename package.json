@@ -1,0 +1,56 @@
+{
+  "name": "FinanceTracker",
+  "version": "0.0.1",
+  "private": true,
+  "scripts": {
+    "android": "react-native run-android",
+    "android:emulator": "emulator -avd Pixel_3a_API_34_extension_level_7_x86_64 &",
+    "android:dev": "npm run android:emulator && sleep 10 && react-native run-android",
+    "ios": "react-native run-ios",
+    "lint": "eslint .",
+    "format": "prettier --write .",
+    "start": "react-native start",
+    "test": "jest",
+    "e2e:build": "detox build -c android.emu.debug",
+    "e2e:test": "detox test -c android.emu.debug"
+  },
+  "dependencies": {
+    "@react-native/new-app-screen": "0.83.1",
+    "@react-navigation/bottom-tabs": "^7.9.0",
+    "@react-navigation/native": "^7.1.26",
+    "@react-navigation/stack": "^7.6.13",
+    "react": "19.2.0",
+    "react-native": "0.83.1",
+    "react-native-paper": "^5.14.5",
+    "react-native-safe-area-context": "^5.6.2",
+    "react-native-screens": "^4.19.0"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.25.2",
+    "@babel/preset-env": "^7.25.3",
+    "@babel/runtime": "^7.25.0",
+    "@react-native-community/cli": "20.0.0",
+    "@react-native-community/cli-platform-android": "20.0.0",
+    "@react-native-community/cli-platform-ios": "20.0.0",
+    "@react-native/babel-preset": "0.83.1",
+    "@react-native/eslint-config": "0.83.1",
+    "@react-native/metro-config": "0.83.1",
+    "@react-native/typescript-config": "0.83.1",
+    "@testing-library/jest-native": "^5.4.3",
+    "@testing-library/react-native": "^13.3.3",
+    "@types/jest": "^29.5.13",
+    "@types/react": "^19.2.0",
+    "@types/react-test-renderer": "^19.1.0",
+    "detox": "^20.46.3",
+    "eslint": "^8.19.0",
+    "eslint-plugin-detox": "^1.0.0",
+    "jest": "^29.6.3",
+    "jest-circus": "^30.2.0",
+    "prettier": "2.8.8",
+    "react-test-renderer": "19.2.0",
+    "typescript": "^5.8.3"
+  },
+  "engines": {
+    "node": ">=20"
+  }
+}
